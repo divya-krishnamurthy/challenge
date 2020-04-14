@@ -14,8 +14,9 @@
 			+ (($value % 3 == 0 && $value % 5 == 0) * 3)
 		];
 		}
+		echo $number[$key]."\n";
 	}
-	print_r($number);
+	// print_r($number);
 
 	test($number);
 
@@ -35,9 +36,10 @@
 				$test = (!is_array($replace[$value])) ? ($key % $replace[$value] == 0) : ($key % $replace[$value][0] == 0 && $key % $replace[$value][1] == 0);
 				
 				if (!$test) {
-					echo "Wrong Logic";
+					echo "Failure";
 				}
 			}
 		}
+		echo ">>>>>>>>>>>>>>>>>>>>>>>  Test Success  <<<<<<<<<<<<<<<<<<<<<<<<<<<<";
 	}
 ?>
