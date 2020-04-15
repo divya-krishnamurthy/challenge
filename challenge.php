@@ -37,6 +37,7 @@
 				
 				if (!$test) {
 					echo "Failure";
+					die();
 				}
 			}
 		}
